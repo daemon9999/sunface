@@ -5,7 +5,7 @@ import LearnMoreBtn from "src/components/common/LearnMoreBtn";
 const Content = () => {
   return (
     <div className="flex flex-col justify-center h-full gap-y-2">
-      <h2 className="text-main text-heading font-light">
+      <h2 className="text-main  text-[2rem] sm:text-[3rem]  md:text-heading  font-light">
         Double your yield <br />
         Double your power
       </h2>
@@ -17,10 +17,10 @@ const Content = () => {
         Discover the future of sustainable farming.
       </p>
 
-      <div className="flex items-center gap-x-4 mt-6">
-        <Button additionalStyle="bg-main text-sm font-medium hover:bg-brand hover:text-main transition-all duration-300">Schedule Meeting</Button>
+      <div className= "flex xs:flex-row flex-col items-center gap-y-4 xs:gap-x-4 mt-6">
+        <Button additionalStyle="bg-main text-sm font-medium hover:bg-brand hover:text-main transition-all duration-300 xs:w-auto w-[150px]">Schedule Meeting</Button>
 
-        <LearnMoreBtn additionalStyle={'text-main hover:bg-brand transition-all duration-300'}/>
+        <LearnMoreBtn additionalStyle={'text-main hover:bg-brand transition-all duration-300 xs:w-auto w-[150px] flex items-center justify-center'}/>
       </div>
     </div>
   );

@@ -3,10 +3,10 @@ import { IoMdClose } from "react-icons/io";
 const HelpNotification = () => {
   const [show, setShow] = useState(true);
   return (
-    <div className="absolute bottom-10 right-10 flex items-center  gap-x-3">
+    <div className="absolute bottom-5 right-5 sm:bottom-10 sm:right-10 flex items-center  gap-x-3">
       {/* MESSAGE */}
       {show && (
-        <div className="bg-main px-3 py-2 rounded-[4px] relative ">
+        <div className="bg-main px-3 py-2 rounded-[4px] relative sm:text-base xs:text-sm text-xs ">
           <button
             type="button"
             onClick={() => setShow(false)}
@@ -27,7 +27,7 @@ const HelpNotification = () => {
           1
         </span>
 
-        <img src="/logo.png" alt="Sunface Logo" className="w-10 h-10" />
+        <img src="/logo.png" alt="Sunface Logo" className="w-8 h-8 xs:w-10 xs:h-10" />
       </div>
     </div>
   );

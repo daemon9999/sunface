@@ -11,7 +11,7 @@ const LearnMoreBtn = ({element='button', additionalStyle,children='Learn More', 
         },
         <>
             {children}
-            <BsArrowRight/>
+            <BsArrowRight className="-mb-1"/>
         </>
       );
     

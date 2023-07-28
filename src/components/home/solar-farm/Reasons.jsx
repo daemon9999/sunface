@@ -28,7 +28,7 @@ const Reasons = () => {
       
   ];
   return (
-    <div className="grid grid-cols-3 gap-10">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
         {items.map(item => (
             <Item key={item.id} item={item}/>
         ))}

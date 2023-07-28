@@ -5,7 +5,7 @@ import LearnMoreBtn from "src/components/common/LearnMoreBtn";
 const Details = () => {
   return (
     <div className="basis-2/5">
-      <h5 className="text-4xl font-ligt">LCOE graph</h5>
+      <h5 className="text-4xl font-light">LCOE graph</h5>
 
       <p className="my-6">
         Bifacial panels generate up to 30% more energy from rear-side gain,

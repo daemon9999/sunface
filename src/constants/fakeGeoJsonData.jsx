@@ -53,14 +53,10 @@ const fakeGeoJsonData = {
       type: "Feature",
       properties: { name: "Fake Country 2", energy: getRandomEnergyValue() },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
-            [15, 50], // Top left corner
-            [15, 55], // Bottom left corner
-            [25, 55], // Bottom right corner
-            [25, 50], // Top right corner
-            [15, 50], // Closing the polygon
+            [39.3982097, -99.4236624], // Top left corner
           ],
         ],
       },

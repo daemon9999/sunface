@@ -1,19 +1,18 @@
 import classNames from "classnames";
 import React from "react";
 import { NavLink } from "react-router-dom";
+import links from "src/constants/links";
+
 
 const Navbar = () => {
-  const links = [
-    "Home",
-    "Optimization",
-    "Our Impact",
-    "Products",
-    "Pricing",
-    "Contact us",
-  ];
+  
+  
 
+
+
+  
   return (
-    <nav className="flex items-center gap-x-10 ">
+    <nav className="flex items-center xl:gap-x-10 lg:gap-x-4 gap-x-2 ">
       {links.map((link, index) => (
         <NavLink
           to={
