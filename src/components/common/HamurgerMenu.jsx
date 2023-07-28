@@ -66,6 +66,10 @@ const HamburgerButton = () => {
           ))}
         </nav>
       </section>
+
+      <style jsx>{`
+        ${isActive && 'body{overflow: hidden; }'  }
+      `}</style>
     </>
   );
 };

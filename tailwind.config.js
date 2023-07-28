@@ -17,7 +17,9 @@ export default {
       },
       backgroundImage: {
         'brand-linear': 'linear-gradient(to bottom, #F1F3AA, #8C9B9A, #5E5D5C, #231D0B)',
-        'farm': "url('/assets/farm-picture.png')"
+        'farm': "url('/assets/farm-picture.png')",
+        'forecast': "url('/assets/forecast-2.png')",
+        'optimization': "url('/assets/optimization.png')"
       },
       fontSize: {
         'heading': '5rem'

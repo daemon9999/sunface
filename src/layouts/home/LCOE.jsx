@@ -9,7 +9,7 @@ const LCOE = () => {
 
 
 
-            <div className='w-[80%] xs:w-[400px] sm:w-[420px]   md:flex-auto'>
+            <div className='w-[80%] xs:w-[400px] sm:w-[420px] md:flex-auto'>
                 <img src="/assets/lcoe-graph.png" alt="LCOE Graph" className='md:ml-auto w-full md:w-4/5 h-auto' />
             </div>
         </div>
