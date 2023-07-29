@@ -12,22 +12,22 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <Home/>,
+        element: <Home />,
       },
       {
-        path: 'optimization',
-        element: <Optimization/>
+        path: "optimization",
+        element: <Optimization />,
       },
       {
-        path: 'products',
-        element: <Products/>
+        path: "products",
+        element: <Products />,
       },
       {
-        path: 'forecast',
-        element: <Forecast/>
-      }
+        path: "forecast",
+        element: <Forecast />,
+      },
     ],
   },
 ]);
 
-export default router
+export default router;

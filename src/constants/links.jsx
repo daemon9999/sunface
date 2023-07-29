@@ -1,7 +1,7 @@
 const links = [
     "Home",
     "Optimization",
-
+    
     "Products",
 
     "Contact us",

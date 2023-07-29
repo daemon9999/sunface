@@ -22,7 +22,7 @@ const LeafletMap = () => {
         doubleClickZoom={false}
       scrollWheelZoom={false}
       tap={false} // Disable map panning on mobile devices
-        style={{ width: "100%", height: "500px"}}
+        style={{ width: "100%", height: "500px", zIndex: 20}}
       >
         <LocationFinderDummy />
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />

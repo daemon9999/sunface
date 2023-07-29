@@ -10,20 +10,15 @@ const Navbar = () => {
         <>
           {link === "Contact us" ? (
             <Link
-            
               to={
                   "https://wa.me/+994705051777"
               }
               key={index}
             >
-              <div className="text-sm font-medium mb-1">
-
               {link}
-              </div>
             </Link>
           ) : (
             <NavLink
-
               to={
                 link === "Home"
                   ? "/"
