@@ -2,7 +2,10 @@ import React from 'react'
 
 const PVSystem = () => {
   return (
-    <div>PVSystem</div>
+    <div>
+      <h5>PV system configuration</h5>
+      <p className=''></p>
+    </div>
   )
 }
 
