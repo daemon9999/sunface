@@ -2,18 +2,22 @@ import { createSlice } from "@reduxjs/toolkit";
 
 
 const initialState = {
-    location: {}
+    optimization: {},
+    forecast: {}
 }
 
 const optimizationReducer = createSlice({
     name: 'optimization',
     initialState,
     reducers: {
-        setLocation: (state, action) => {
-            state.location = action.payload
+        setOptimization: (state, action) => {
+            state.optimization = action.payload
+        }, 
+        setForecast: (state, action) => {
+            state.forecast = action.payload
         }
     }
 })
 
-export const {setLocation} = optimizationReducer.actions
+export const {setOptimization, setForecast} = optimizationReducer.actions
 export default optimizationReducer.reducer

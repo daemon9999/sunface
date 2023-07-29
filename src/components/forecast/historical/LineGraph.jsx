@@ -67,21 +67,22 @@ import {
   Tooltip,
   Legend,
 } from "recharts";
-import useResponsive from "src/hooks/useResponsive";
 
-const LineGraph = ({ data, title, xAxis, yAxis, yValue, angle = "" }) => {
-  const md = useResponsive("md");
+const LineGraph = ({ data, title, xAxis, yAxis, yValue }) => {
+    
   return (
     <div className="flex flex-col mb-10">
-      <h1 className="text-center ml-20">{title}</h1>
+      <h1 className="text-center ml-20 text-4xl font-semibold mb-10 ">{title}</h1>
       <LineChart
-        width={md ? 500 : 300}
-        height={md ? 300 : 300}
+        width={800}
+        height={500}
         data={data}
         margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
       >
         <CartesianGrid strokeDasharray="3 3" />
-        <XAxis angle={angle} dataKey={xAxis} type="category" />
+        <XAxis angle={20} dataKey={xAxis} type="category" interval={30}  style={{
+            top: 20
+        }} />
 
         <YAxis
           dataKey={yAxis}

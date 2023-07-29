@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useMapEvents } from "react-leaflet";
 import store from "src/store";
-import { setLocation } from "src/store/optimization";
+import { setForecast, setOptimization } from "src/store/optimization";
 
 const LocationFinderDummy = () => {
   const getData = ({ lat, lng }) => {
@@ -17,9 +17,10 @@ const LocationFinderDummy = () => {
     )
       .then((res) => {
      
-        store.dispatch(setLocation(res.data));
+        store.dispatch(setOptimization(res.data.monthsSummary));
+        store.dispatch(setForecast(res.data.forecast))
       })
-      .catch((err) => console.log(errj));
+      .catch((err) => {throw new Error(err.message)});
   };
 
   const map = useMapEvents({

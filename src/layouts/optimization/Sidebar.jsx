@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Input from "src/components/forecast/sidebar/Input";
 import LocationDetail from "src/components/forecast/sidebar/LocationDetail";
 import MapData from "src/components/forecast/sidebar/MapData";
@@ -12,6 +13,8 @@ const Sidebar = () => {
         <LocationDetail />
         <MapData />
         <PVSystem/>
+
+        <Link to={'/forecast'} className="bg-brand text-main py-2 px-3 flex items-center justify-center rounded-md mt-10">Learn more about Forecast</Link>
       </div>
     </aside>
   );

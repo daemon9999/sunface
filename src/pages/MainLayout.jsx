@@ -17,8 +17,6 @@ const MainLayout = () => {
 
         {(location.pathname  !== '/forecast' && location.pathname !== '/optimization') &&  <Footer/>}
     </>
-
-
   )
 }
 

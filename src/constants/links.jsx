@@ -3,7 +3,7 @@ const links = [
     "Optimization",
     "Our Impact",
     "Products",
-    "Pricing",
+
     "Contact us",
   ];
 

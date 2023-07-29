@@ -4,9 +4,10 @@ import Sidebar from "src/layouts/optimization/Sidebar";
 
 const Optimization = () => {
   return (
-    <div className="flex gap-x-4  h-[88vh]">
+    <div className="flex gap-x-4 md:flex-row flex-col h-[88vh]">
       <LeafletMap />
       <Sidebar />
+      
     </div>
   );
 };
