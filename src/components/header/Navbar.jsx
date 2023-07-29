@@ -10,6 +10,7 @@ const Navbar = () => {
         <>
           {link === "Contact us" ? (
             <Link
+            className="text-sm font-medium text-brand mb-1"
               to={
                   "https://wa.me/+994705051777"
               }
