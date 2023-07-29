@@ -10,9 +10,7 @@ const HamburgerButton = () => {
   const toggleHamburger = () => {
     setIsActive(!isActive);
   };
-  const location = useLocation()
-   
-  
+  const location = useLocation();
 
   return (
     <>
@@ -28,12 +26,13 @@ const HamburgerButton = () => {
         <div className="h-1 w-1/2 bg-brand"></div>
       </button>
 
-
-        {isActive && (
-            <div className="w-1/4 fixed top-0 left-0 z-50 h-full" onClick={() => setIsActive(false)}/>
-        )}
+      {isActive && (
+        <div
+          className="w-1/4 fixed top-0 left-0 z-50 h-full"
+          onClick={() => setIsActive(false)}
+        />
+      )}
       <section
-    
         className={classNames(
           "fixed bg-main z-50 right-0 top-0  h-full transition-all duration-300",
           {
@@ -56,11 +55,22 @@ const HamburgerButton = () => {
 
         <nav className="flex  flex-col justify-center h-full text-center gap-y-4">
           {links.map((link, key) => (
-            <NavLink onClick={() => {
-              ('/' + link) !== location.pathname && setIsActive(false)
-            }} to={`${link === 'Home' ? '/' : '/' + link.toLowerCase()}`} key={key} className={({isActive}) => (
-              `text-lg font-semibold ${isActive && 'text-red-500'}`
-            )}>
+            <NavLink
+              onClick={() => {
+                "/" + link !== location.pathname && setIsActive(false);
+              }}
+              to={`${
+                link === "Home"
+                  ? "/"
+                  : link === "Contact us"
+                  ? "https://wa.me/+994705051777"
+                  : "/" + link.toLowerCase()
+              }`}
+              key={key}
+              className={({ isActive }) =>
+                `text-lg font-semibold ${isActive && "text-red-500"}`
+              }
+            >
               {link}
             </NavLink>
           ))}
@@ -68,7 +78,7 @@ const HamburgerButton = () => {
       </section>
 
       <style jsx>{`
-        ${isActive && 'body{overflow: hidden; }'  }
+        ${isActive && "body{overflow: hidden; }"}
       `}</style>
     </>
   );
